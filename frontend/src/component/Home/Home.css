@@ -1,0 +1,138 @@
+.banner{
+    background-image: linear-gradient(to right,#635dc0,#c54766);
+    height:100vmin;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* font-family: 'MrSheffield', serif;
+    font-size: 30px; */
+    font:600 1.7vmax "priori-sans",sans-serif;
+    font-style: italic;
+    /* scroll-behavior: smooth; */
+}
+ 
+.banner > h1{
+    width: 90%;
+    font-size: 3vmax;
+}
+.banner > p{
+     width: 90%;
+}
+
+.banner > a > button{
+    margin-bottom: 5vmax;
+    cursor: pointer;
+    background-color: white;
+    border:1px solid white;
+    padding:1vmax;
+    transition: all 0.5s;
+    width: 10vmax;
+    border-radius: 10px;
+    font:600 1.5vmax 'Roboto';
+}
+
+.banner > a > button:hover{
+    background-image: linear-gradient(to right,#635dc0,#c54766);
+    color: white;
+}
+
+.banner::after{
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: white;
+    position:absolute;
+    top:0%;
+    left:0%;
+    clip-path: polygon(100% 82%, 0 100%, 100% 100%);}
+
+.container{
+    display: flex;
+    margin : 2vmax auto;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: center;
+}
+
+.homehandling{
+    text-align: center;
+    width: 20vmax;
+    padding : 1vmax;
+    border-bottom: 1px solid #3027ae;
+    margin: 5vmax auto;
+}
+
+.productCard{
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(49, 45, 45);
+    margin: 2vmax;
+}
+
+.productCard > div{
+    margin : 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.productCard>div>span{
+    margin:0.5vmax ;
+    font:300 0.9vmax 'Roboto';
+}
+
+.productCard > p{
+    font-family: 'Roboto';
+font-size: 1.2vmax;
+margin:1vmax 0.5vmax;
+margin-bottom: 0;
+}
+
+.productCard>span{
+    margin : 0.5vmax 0.5vmax;
+    color : tomato;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.5vmax;
+}
+
+.productCard:hover{
+    box-shadow: 0 0 5px rgb(29, 26, 26);
+    transform:translate(-1vmax);
+}
+
+
+
+@media screen and (max-width:800px){
+    .banner{
+        font:600 1.8vmax 'MrSheffield';
+        font-style: italic;
+    }
+    
+    .productCard>p{
+        font-size:1.7vmax;
+    }
+
+    .productCard>div{
+        margin:0vmax;
+        display: block;
+    }
+
+    .productCard>span{
+       font-size: 1.5vmax;
+    }
+
+    .productCard>div>span{
+        margin:0 0.5vmax;
+        font : 300 1vmax "Robot";
+    }
+    .banner > a > button{
+        width: 15vh;
+        font-family: 'MrSheffield', serif;
+        font-size: 20px;
+    }
+
+}

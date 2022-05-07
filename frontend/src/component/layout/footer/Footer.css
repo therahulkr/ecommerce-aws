@@ -1,0 +1,100 @@
+#details{
+  background-image: linear-gradient(45deg,gray, black);
+  color:white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* margin: 0vmax 7vmax; */
+  height: 20vh;
+  padding: 2vmax 0vmax;
+}
+
+#details .number{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* margin-right: 4vmax; */
+}
+#inner{
+  margin-left: 5vmax;
+}
+#details .number li{
+  list-style: none;
+}
+
+.webname{
+  width: 50%;
+  text-align: left;
+  margin-left: 7vmax;
+  color: white;
+  font-style: italic;
+  /* text-transform: lowercase; */
+  font-family: 'MrSheffield', serif;
+  font-size: 30px;
+  line-height: 1.18em; 
+  text-decoration: none;
+  transition: color 0.1s;
+}
+.webname:hover{
+  color:tomato;
+}
+
+#icon{
+  width: 30%;
+  display: flex;
+  padding: 0vmax 7vmax;
+}
+ #icon img{
+  width:4vmax;
+  height:4vmax;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #details{
+    flex-direction: column;
+  }
+  #details .number{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .number{
+    align-items: center;
+  }
+  .number a{
+    width: 50%;
+    text-align: center;
+  }
+  #inner{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .webname{
+    margin-left: 1vmax;
+  }
+  #icon{
+    padding-top: 2rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @media only screen and (max-width: 500px) {
+    #icon{
+      width: 100%;
+      padding: 0px;
+    }
+    .webname{
+      font-size: 20px;
+    }
+    .number{
+      align-items: center;
+    }
+    #inner h1{
+      font-size: 25px;
+    }
+   }
+}
